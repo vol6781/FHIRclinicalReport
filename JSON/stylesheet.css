@@ -1,0 +1,65 @@
+body {
+    min-width: 1000px;
+    overflow: hidden;
+}
+
+#mainDiv {
+    margin-left: 100px;
+}
+
+textarea {
+    width: 400px;
+    height: 400px;
+    font-size: 15px;
+}
+
+#table1,
+#table2 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    min-width: 800px;
+    overflow: hidden;
+}
+
+table,
+table tr,
+table tr td {
+    border-style: groove;
+    border-width: 1px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+input[type="button"] {
+    width: 200px;
+    font-size: 20px;
+}
+
+input[type="text"] {
+    width: 200px;
+    font-size: 10px;
+}
+
+.btnClass {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2,
+h4 {
+    text-decoration: underline;
+}
+
+span {
+    margin-right: 50px;
+}
+
+th {
+    background-color: aqua;
+}
+
+table tr {
+    min-height: 80px;
+    height: 30px;
+}

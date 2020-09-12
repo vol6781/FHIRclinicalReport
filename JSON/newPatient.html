@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>牙科手術同意書</title>
+   <script>
+        var a;
+        var obj = {"name": "", "telecom":0, "gender":"", "birthDate":""};
+
+        function myFunction() {
+            var a, b, c, d;
+            obj.name = document.getElementById("name").value;
+            obj.telecom = document.getElementById("phone").value;
+            if (document.getElementById("male").checked == true) {
+                obj.gender = "male";
+            }
+            if (document.getElementById("female").checked == true) {
+                obj.gender = "female";
+            }
+            obj.birthDate = document.getElementById("birth").value;
+            var myJSONstr = JSON.stringify(obj);
+            alert(myJSONstr);
+            //var encodedData = btoa(myJSONstr);
+          
+        }
+    </script>
+</head>
+<body>
+    <fieldset>
+        <legend>填寫基本資料</legend>
+        病人姓名:<br />
+        <input type="text" id="name" name="病人姓名" value="" />
+        <br />
+        性別:<br />
+        <input type="radio" name="gender" value="male" id="male" />
+        Male<br />
+        <input type="radio" name="gender" value="female" id="female" />
+        Female<br />
+        電話:<br />
+        <input type="text" id="phone" name="電話" value="" />
+        <br />
+        生日(格式範例:1974-12-25):<br />
+        <input type="text" name="生日"  id="birth" />
+        <br />
+    </fieldset>
+    <br />
+    <br />
+
+  
+    <button onclick="myFunction()">savePatientData</button>
+
+</body>
+</html>
